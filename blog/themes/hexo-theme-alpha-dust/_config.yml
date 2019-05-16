@@ -1,0 +1,43 @@
+# Logo (Font Awesome Class)
+fa_logo: fa-cube
+
+# Header
+menu:
+  Home: /
+  Archives: /archives
+  About: /about.html
+  Tags: /tags
+  Categories: /categories
+  Contact: /contact.html
+
+# Default post title
+default_post_title: 未命名
+
+# Archive Date Format
+archive_date_format: YYYY-MM-DD
+
+# Comments.
+comments:
+  # Disqus comments
+  disqus_shortname:
+
+# Google Analytics Tracking ID
+google_analytics:
+
+# Social Accounts
+twitter_url: https://twitter.com/?lang=en
+facebook_url: https://www.facebook.com/
+instagram_url: https://www.instagram.com/
+dribble_url: https://dribbble.com/
+github_url: https://github.com/saintAsmita/saintAsmita.github.io
+googleplus_url: https://plus.google.com/
+behance_url: https://www.behance.net/
+fivehundredpx_url: https://500px.com/
+email_url: test@example.com
+rss_url: \#
+
+# Footer About Text
+footer_about: "这个地方没有字就不太好看，所以写上一点的 --- 鲁迅"
+
+# Footer Copyright Line
+footer_copyright: "@saintAsmita. All right reserved | Design & Hexo <a href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"

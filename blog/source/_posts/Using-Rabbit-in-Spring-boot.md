@@ -56,10 +56,6 @@ public class RabbitConfiguration {
     }
 
     @Bean
-    @Profile(value = {
-        "production",
-        "test"
-    })
     public PropsMqListener propsMqListener() {
         return new PropsMqListener();
     }
@@ -211,4 +207,5 @@ public class RabbitConfiguration {
 public void handlePropGift(GiftMqInfo giftMqInfo) {
     // do something
 }
-``·
+
+```

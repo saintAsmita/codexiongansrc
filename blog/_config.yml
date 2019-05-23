@@ -8,7 +8,7 @@ subtitle: Xiongan
 description:
 keywords:
 author: saint Asmita
-language:
+language: zh-CN
 timezone: Asia/Shanghai
 
 
@@ -74,7 +74,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-alpha-dust
+theme: hexo-theme-next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

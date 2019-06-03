@@ -4,8 +4,6 @@ date: 2019-05-23 17:28:37
 tags: Rabbit Springboot
 ---
 
-# Spring boot与MQ
-
 本文介绍如何在Spring Boot中监听MQ，分别监听单个MQ与多个MQ。主要是以代码的形式展示，默认读者对Spring boot有最基本的认识。
 <!--more-->
 

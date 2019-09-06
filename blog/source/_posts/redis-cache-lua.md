@@ -1,7 +1,7 @@
 ---
 title: redis-cache-lua
 date: 2019-09-06 19:23:47
-tags: redis go
+tags: [redis,go]
 ---
 
 在使用Redis的过程中，难免会用到lua，如果lua脚本很多，可以在项目启动是将lua缓存到redis里面。本文将介绍golang下，如果在项目启动时缓存lua脚本。

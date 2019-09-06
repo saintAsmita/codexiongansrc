@@ -42,4 +42,41 @@ tags: Go
 		func (p P) IsNotOk{}
 	```
     
-12. 待续
+12. defer实参在入栈的时候估值，gorountine实参在创建的时候估值。但是如果后面是匿名函数，则实参的估值推迟到执行的时候，例如：
+
+	```go
+		func estimateValSample(t *testing.T) {
+			defer fmt.Print(x) // 1
+			defer func() {
+				fmt.Print(x) // 10
+			}()
+			x = 10
+		}
+	```
+输出结果： 10，1
+
+13. 对于多个int64连接成字符串，又不是在循环体内，循环很多次组成成一个字符串的，我建议直接用 + 号就行了。
+
+```
+// 直接+拼接字符串： Benchmark-8   	10000000	       205 ns/op
+func plusStr() {
+	var u1 int64 = rand.Int63()
+	var u2 int64 = rand.Int63()
+	_ = strconv.FormatInt(u1, 10) + "_" + strconv.FormatInt(u2, 10)
+}
+
+//通过Sprintf格式化字符串  Benchmark-8  10000000	       258 ns/op
+func format(){
+	var u1 int64 = rand.Int63()
+	var u2 int64 = rand.Int63()
+	_ = fmt.Sprintf("%d_%d", u1, u2)
+}
+
+// 通过Join构造数组，然后拼接，Benchmark-8  10000000	       211 ns/op
+func join() {
+	var u1 int64 = rand.Int63()
+	var u2 int64 = rand.Int63()
+	_ = strings.Join([]string{strconv.FormatInt(u1, 10), "_", strconv.FormatInt(u2, 10)}, "")
+}
+```
+13. 待续
